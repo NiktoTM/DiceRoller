@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&display=swap');
+
+/** Kevin **/
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  background: linear-gradient(270deg, #00ff88, #0700b8);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 16s ease infinite;
+  -moz-animation: AnimationName 16s ease infinite;
+  -o-animation: AnimationName 16s ease infinite;
+  animation: AnimationName 16s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-top: 40px;
+  color: #fff;
+  text-shadow: 0 0 50px 15px white;
+}
+
+/** Christopher **/
+
+/** Main Container **/
+main {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 120px;
+  margin-bottom: 100px;
+  width: 70%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(200px);
+  box-shadow: 0 20px 80px black;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 0 50px 5px white;
+}
+
+/** Player Section **/
+
+.player-cards {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  transition: all 0.75s;
+  text-align: center;
+}
+
+.player {
+  width: 50%;
+  height: auto;
+  color: rgba(0, 0, 0, 0.705);
+  margin: 0%;
+}
+
+
+
+/** Player Name **/
+.name {
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+/** Player Score **/
+.score {
+  font-size: 80px;
+  color: black;
+}
+
+/** Active Player **/
+.player--active {
+  background-color: orange;
+}
+.player--active .current {
+  opacity: 1;
+}
+
+/** Maksym **/
+
+/** Current Scores **/
+.current {
+  margin: 0 auto;
+  background: linear-gradient(270deg, #00ff88, #0700b8);
+  -webkit-animation: AnimationName 16s ease infinite;
+  -moz-animation: AnimationName 16s ease infinite;
+  -o-animation: AnimationName 16s ease infinite;
+  animation: AnimationName 16s ease infinite;
+  background-size: 400% 400%;
+  border-radius: 9px;
+  color: black;
+  width: 50%;
+  text-align: center;
+  transition: all 0.75s;
+}
+
+@keyframes AnimationName {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.current-label {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 30px;
+  color: black;
+  padding-top: 20px;
+}
+
+.current-score {
+  font-size: 56px;
+  margin-top: 15px;
+}
+
+/** Malte **/
+
+/** Buttons **/
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-size: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: lightgrey;
+  backdrop-filter: blur(20px);
+  padding: 16px;
+  border-radius: 800px;
+  box-shadow: 0 20px 56px black;
+}
+
+.btn--roll {
+  top: 55%;
+}
+.btn--hold {
+  top: 75%;
+}
+.btn--new {
+  top: 85%;
+}
+
+/** Christopher **/
+
+/** Buttons on Hover **/
+.btn--new:hover {
+  padding: 16px;
+  font-size: 25px;
+  letter-spacing: 3px;
+  background-color: #bf2e34;
+  backdrop-filter: none;
+  color: white;
+  box-shadow: -2px 7px 15px -7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 7px 15px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 7px 15px -7px rgba(0, 0, 0, 0.75);
+  transition: all 0.2s;
+}
+.btn--roll:hover,
+.btn--hold:hover {
+  padding: 21px;
+  box-shadow: -2px 7px 15px -7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 7px 15px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 7px 15px -7px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s;
+}
+
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 16px 32px black;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+/** Kevin **/
+
+.dice {
+  position: absolute;
+  left: 45%;
+  top: 15%;
+  transform: translateX(-50%);
+  height: 128px;
+  box-shadow: 0 32px 80px black;
+
+  animation: spin  10s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.player--winner {
+  background-image: linear-gradient(green, yellow);
+}
+
+.player--winner .name {
+  font-weight: 700;
+}
+
+.hidden {
+  display: none;
+}
+
+/** Maksym **/
+
+/** Media Queries **/
+
+@media screen and (max-width: 1025px) {
+  main {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 801px) {
+  main {
+    width: 80%;
+  }
+  .dice {
+    height: 96px;
+  }
+  .btn {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    width: 90%;
+  }
+  .dice {
+    margin-top: -20%;
+    height: 80px;
+  }
+  .score {
+    margin-top: 0;
+  }
+  .btn {
+    font-size: 16px;
+    padding: 13px;
+  }
+  .btn--new {
+    top: 25%;
+  }
+  .btn--roll {
+    top: 40%;
+    padding: 160px;
+  }
+  .btn--hold {
+    top: 50%;
+    padding: 14px;
+  }
+
+  .btn--roll:hover,
+  .btn--hold:hover {
+    padding: 8px;
+  }
+
+  .btn--new:hover {
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  .current-score {
+    font-size: 32px;
+    margin-top: 0;
+    padding: 24px;
+  }
+}
